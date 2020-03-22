@@ -3,6 +3,5 @@ Approximates the corona virus infection curve using exponential regression and p
 Features:
 -select country
 -select predicted day count
-
-
+<br>
 [Live Page](https://sugeedarou.github.io/CoronaApproximationCurve/)
