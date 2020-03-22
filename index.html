@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Corona Approximation Curve</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div id="options">
+        <select id="country"></select>
+        <label id="daysLabel"></label>
+        <input id="days" type="range" min="10" max="30" value="10" />
+    </div>
+    <p id="function"></p>
+    <canvas id="canvas"></canvas>
+    <p>Data provided by <a href="https://coronavirus.jhu.edu/">Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)</a> using the <a href="https://github.com/ExpDev07/coronavirus-tracker-api">coronavirus-tracker-api</a></p>
+    <p>Visualized using <a href="https://www.chartjs.org/">Chart.js</a></p>
+    <script src="js/chart.js/Chart.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

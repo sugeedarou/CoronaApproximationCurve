@@ -1,0 +1,12 @@
+#options {
+    float: left;
+}
+
+#function {
+    font-weight: bold;
+    float: right;
+}
+
+#country {
+    margin-right: 30px;
+}
