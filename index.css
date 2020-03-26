@@ -2,9 +2,12 @@
     float: left;
 }
 
+#info {
+    float: right;
+}
+
 #function {
     font-weight: bold;
-    float: right;
 }
 
 #country {

@@ -389,10 +389,9 @@ function sumUp2(xArr, yArr, funct) {
 }
 
 function floor(num, digits) {
-    let factor = 10*(digits)
+    let factor = parseFloat(Math.pow(10, digits))
     return Math.floor(num * factor) / factor
 }
-
 
 function predictData(values, options) {
     let days = parseInt(options.days)
@@ -407,7 +406,8 @@ function predictData(values, options) {
 
     let a = Math.exp(1/n * total(yArr) - 1/n * b * total(xArr))
 
-    functionElem.innerHTML = `y(x) = ${floor(a, 2)}*e^(${floor(b, 2)}*x)`
+    
+    functionElem.innerHTML = `y(x) = ${floor(a, 2)}*${floor(Math.exp(b), 2)}<sup>x</sup>`
 
     let result = []
     for (let i = 0; i < values.length + days; i++) {
